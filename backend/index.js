@@ -36,19 +36,6 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader(
-    'Access-Control-Allow-Methods',
-    'GET, POST, PUT, DELETE, OPTIONS'
-  );
-  res.setHeader(
-    'Access-Control-Allow-Headers',
-    'X-Requested-With,content-type'
-  );
-  next();
-});
-
 app.get("/api/events", (req, res) => {
   const { max, search } = req.query;
 
