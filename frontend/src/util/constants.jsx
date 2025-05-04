@@ -1,3 +1,3 @@
-export const BACKEND_URL = 'https://events-creation-backend.vercel.app/api';
+export const BACKEND_URL = 'https://events-creation-backend.vercel.app/';
 
-export const FRONTEND_URL = 'http://localhost:5173';
+export const FRONTEND_URL = 'https://events-creation-app.vercel.app';
